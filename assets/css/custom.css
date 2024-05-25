@@ -1,0 +1,199 @@
+.center{
+  text-align: center;
+}
+.banner-action-button {
+  font-size: 22px;
+}
+#grad1 {
+  height: auto;
+  background-color: #cccccc;
+  background-image: linear-gradient(white, lightgray);
+}
+#customers {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 16px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #eaeaea;
+  color: #383131;
+}
+.index_icon{
+  font-size: 60px;
+  color: #212121;
+}
+.fa{
+  font-size: 12px;
+}
+.justify{
+  text-align: justify;
+  color: #212121;
+  font-weight: 400;
+}
+.uploadOuter {
+  text-align: center;
+  padding: 20px;
+  strong {
+    padding: 0 10px
+  }
+}
+.preview-img {
+  max-width: 400px;
+  width: inherit;
+  box-shadow: 0px 0px 20px 0px #cacaca; 
+  border-radius: 5px;"
+  object-fit: scale-down;
+}
+.original-img {
+  width: inherit;
+  box-shadow: 0px 0px 20px 0px #cacaca; 
+  border-radius: 5px;"
+  object-fit: scale-down;
+}
+.download-button-container {
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  padding: 20px;
+}
+.preview-img-wrapper {
+  padding: 30px 30px 30px 30px;
+  box-shadow: 0px 0px 30px 0px #cacaca; 
+  border-radius: 10px; 
+}
+#overlay {
+  position: fixed;
+  width: 96px;
+  height: 96px;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.9);
+  /*background: rgba(255, 255, 255, 0.5) url("{{ asset('public/assets/images/loader2.gif') }}") center center no-repeat;*/
+  -webkit-box-shadow: 0px 24px 64px rgba(0, 0, 0, 0.24);
+  box-shadow: 0px 24px 64px rgba(0, 0, 0, 0.24);
+  border-radius: 16px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity .2s ease-out, visibility 0s linear .2s;
+  -o-transition: opacity .2s ease-out, visibility 0s linear .2s;
+  transition: opacity .2s ease-out, visibility 0s linear .2s;
+  z-index: 1000; 
+}
+#overlay.fullscreen {
+  padding: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none; 
+}
+#overlay.show {
+  -webkit-transition: opacity .4s ease-out, visibility 0s linear 0s;
+  -o-transition: opacity .4s ease-out, visibility 0s linear 0s;
+  transition: opacity .4s ease-out, visibility 0s linear 0s;
+  visibility: visible;
+  opacity: 1; 
+}
+#overlay img {
+  width: 40px; 
+  height: 40px;
+  -webkit-animation: loader-rotate 2s linear infinite;
+  animation: loader-rotate 2s linear infinite;
+  position: absolute;
+  left: calc(50% - 24px);
+  top: calc(50% - 24px);
+  display: block;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg); 
+}
+.spinner {
+  margin: auto;
+  width: 35px;
+  height: 35px;
+  margin-top: 1.2rem;
+}
+.price-preview {
+  color: #1579aa;
+  font-weight: 600;
+}
+.payment-method-icon {
+  width: 50px;
+}
+.icon-container {
+  margin-top: 20px;
+}
+.razorpay-payment-button {
+  display: none;
+}
+.no-bg-overlap {
+  padding: 10px;
+  box-shadow: 1px 1px 35px 1px #212121;
+  background-color: white; 
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -4em;
+  z-index: 10;
+}
+#preview {
+  text-align: center;
+  img {
+    max-width: 100%
+  }
+}
+#example {
+  /*border: 1px solid #fdfdfd;*/
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 3px 3px 30px 3px #cacaca;
+}
+#grad1 {
+  height: auto;
+  background-color: #cccccc;
+  background-image: linear-gradient(lightgrey , white);
+}
+.ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
+  padding-left: 13px;
+    padding-right: 17px;
+    padding-top: 1.5rem;
+ }
+ .quote-imgs-thumbs {
+  background: #eee;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  margin: 1.5rem 0;
+  padding: 0.75rem;
+}
+.quote-imgs-thumbs--hidden {
+  display: none;
+}
+.img-preview-thumb {
+  background: #fff;
+  border: 1px solid #777;
+  border-radius: 0.25rem;
+  box-shadow: 0.125rem 0.125rem 0.0625rem rgba(0, 0, 0, 0.12);
+  margin-right: 1rem;
+  max-width: 140px;
+  padding: 0.25rem;
+}
